@@ -94,17 +94,21 @@ for( let i = 0; i < squadreCalcio.length; i++ ) {
 
     // Falli subiti
     thisSquadra.falli = numeroRandom(100, 300);
+
 };
 
 // Destructuring
 //
-let {squadra, falli} = squadreCalcio;
+// const [primoElemento, secondoElemento, terzoElemento, quartoElemento] = squadreCalcio;
 
-const [primoElemento, secondoElemento, terzoElemento, quartoElemento] = squadreCalcio;
-console.log(primoElemento);
-console.log(secondoElemento);
-console.log(terzoElemento);
-console.log(quartoElemento);
+for ( let i = 0; i < squadreCalcio.length; i++) {
+    let thisSquadra = squadreCalcio[i];
+
+    let {squadra, falli} = thisSquadra;
+
+    console.log(squadra, falli);
+};
+
 
 // Funzione
 //
