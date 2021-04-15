@@ -100,15 +100,21 @@ for( let i = 0; i < squadreCalcio.length; i++ ) {
 // Destructuring
 //
 // const [primoElemento, secondoElemento, terzoElemento, quartoElemento] = squadreCalcio;
-
+let nuoveSquadre = [];
 for ( let i = 0; i < squadreCalcio.length; i++) {
     let thisSquadra = squadreCalcio[i];
 
     let {squadra, falli} = thisSquadra;
 
-    console.log(squadra, falli);
+    const oggettoNuoveSquadre = {
+        squadra,
+        falli
+    };
+
+    nuoveSquadre.push(oggettoNuoveSquadre);
 };
 
+console.log(nuoveSquadre);
 
 // Funzione
 //
